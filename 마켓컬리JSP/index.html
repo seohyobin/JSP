@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap{width: 100%;}
+        #wrap .container{width: 100%; max-width: 500px; margin: 0 auto;}
+        #wrap .container .title{width: 100%; text-align: center; font-size: 28px; padding: 0 0 30px 0; }
+        #wrap .container .content{width: 100%;}
+        #wrap .container .content form{}
+        #wrap .container .content form label{ }
+        
+        #wrap .container .content form label .input{display: block; width: 500px; height: 40px; margin: 0 0 15px 0; font-size: 16px;}
+        #wrap .container .content form label .radio1{font-size: 16px; margin-bottom: 15px;}
+        #wrap .container .content form label .radio2{font-size: 16px; margin-bottom:15px ;}
+        #wrap .container .content form label .chk1{font-size: 16px; margin-bottom:15px ;}
+        #wrap .container .content form label .btn{width: 508px; height: 40px; font-size: 16px;}
+
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="container">
+            <div class="title">
+                <h1>회원가입</h1>
+            </div>
+            <div class="content">
+                <form name="sign_up" id="signUp" method="post" action="./res.jsp">
+                    <label for=""><input class="input" type="text" name="id" id="id" required autofocus placeholder="아이디를 입력하세요"></label>
+                    <label for=""><input class="input" type="text" name="pw" id="pw" placeholder="비밀번호를 입력하세요"></label>
+                    <label for=""><input class="input" type="text" name="pw_ok" id="pwOk" placeholder="비밀번호를 한번 더 입력하세요"></label>
+                    <label for=""><input class="input" type="text" name="name" id="name" placeholder="이름을 입력하세요"></label>
+                    <label for=""><input class="input" type="text" name="e_mail" id="eMail" placeholder="이메일을 입력하세요"></label>
+                    <label for=""><input class="input" type="text" name="hp" id="hp" placeholder="전화번호를 입력하세요"></label>
+                    <label for=""><input class="input" type="text" name="addr" id="addr" placeholder="주소를 입력하세요"></label>
+                    <label for="">성별<br>
+                        <input class="radio1" type="radio" name="gender" id="gender1" value="남자">남자
+                        <input class="radio1" type="radio" name="gender" id="gender2" value="여자">여자
+                        <input class="radio1" type="radio" name="gender" id="gender3" value="선택안햄" checked>선택안함
+                    </label>
+                    <label for=""><input class="input" type="text" name="birth" id="birth" placeholder="생년월일을 입력하세요"></label>
+                    <label for="">추가 입력사항<br>
+                        <input class="radio2" type="radio" name="add" id="add" value="친구초대 추천인 아이디">친구초대 추천인 아이디
+                        <input class="radio2" type="radio" name="add" id="add2" value="참여 이벤트명">참여 이벤트명<br>
+                    </label>
+                    <label for="">이용약관동의<br>
+                        <input class="chk1" type="checkbox" name="chk" id="chk1" value="이용약관동의">이용약관동의
+                        <input class="chk1" type="checkbox" name="chk" id="chk2" value="개인정보 수집∙이용 동의">개인정보 수집∙이용 동의<br>
+                        <input class="chk1" type="checkbox" name="chk" id="chk3" value="무료배송, 할인쿠폰 등 혜택/정보 수신 동의">무료배송, 할인쿠폰 등 혜택/정보 수신 동의<br>
+                        <input class="chk1" type="checkbox" name="chk" id="chk4" value="본인은 만 14세 이상입니다.">본인은 만 14세 이상입니다.<br>
+                    </label>
+                    <label for=""><input class="btn" type="submit" name="btn" id="btn" value="입력완료"></label>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

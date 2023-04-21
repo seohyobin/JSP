@@ -1,0 +1,73 @@
+tomcat 
+웹서버
+//////////////////////////////////////////////////////////////
+윈도우 키 + r
+cmd
+d:
+D:\풀스택서효빈\apache-tomcat-9.0.73\bin
+startup
+웹브라우저 가서 
+localhost:8080/0405_JAVA_JSP_프로그래밍_톰캣/변수_매소드_.jsp
+localhost:8080/0405_JAVA_JSP_혼자하기
+localhost:8080/JSP/0407_JSP_프로그래밍/J01_01입력폼_이름_나이_폼전송.jsp
+localhost:8080/JSP/0407_JSP_프로그래밍/J02_01입력폼_이름_전화번호_지역.jsp
+localhost:8080/JSP/0407_JSP_전송폼_혼자하기/form_input.jsp
+//성적표
+localhost:8080/JSP/0410_JSP_프로그래밍/J01_01_국어_영어_수학_입력상자_요청페이지.html
+//체크박스
+localhost:8080/JSP/0410_JSP_프로그래밍/J02_01_입력상자_체크박스_셀렉트박스_전송요청.html
+localhost:8080/JSP/구구단/index.html
+localhost:8080/JSP/0414_JSP_프로그래밍/J01_method.jsp
+localhost:8080/JSP/혼자하기/J01.jsp
+localhost:8080/JSP/0417_JSP_프로그래밍/J01_쿠키설정.jsp
+
+127.0.0.1:8080/JSP/0417_JSP_프로그래밍/J01_쿠키설정.jsp
+192.168.40.149:8080/JSP/0417_JSP_프로그래밍/J01_쿠키설정.jsp
+192.168.40.149:8080/JSP/0417_JSP_프로그래밍/J02_쿠키가져오기_get_cookie.jsp
+192.168.40.149:8080/JSP/0418_JSP_프로그래밍/J01_쿠키설정_set_cookie_삭제.jsp
+192.168.40.149:8080/JSP/0418_JSP_프로그래밍/J01_쿠키가져오기_for_반복문.jsp
+192.168.40.149:8080/JSP/0418_JSP_MYSQL_데이터베이스/JDBC_DB_연동하기.jsp
+localhost:8080/JSP/0418_JSP_MYSQL_데이터베이스/JDBC_DB_연동하기.jsp
+localhost:8080/JSP/0418_JSP_MYSQL_데이터베이스/JDBC_DB_연동하기.jsp
+localhost:8080/JSP/0419_JSP_MYSQL_데이터베이스/J01_table.jsp
+localhost:8080/JSP/0419_JSP_프로그래밍/index.jsp
+localhost:8080/JSP/0420_JSP_프로그래밍/index.jsp
+localhost:8080/JSP/0420_JSP_프로그래밍/todo_list_view.jsp
+localhost:8080/JSP/0420_JSP_MYSQL_혼자하기/index.jsp
+localhost:8080/JSP/0420_JSP_MYSQL_혼자하기/todo_view.jsp
+localhost:8080/JSP/0421_JSP_MYSQL_DB_혼자하기/index.jsp
+localhost:8080/JSP/0421_JSP_MYSQL_DB_혼자하기/view.jsp
+localhost:8080/JSP/표/index.html
+////////////////////////////////////////////////////////////
+
+서버실행
+
+
+///////////////////////////////////////////////////////////
+스크립트 요소의 정리
+
+ JSP 페이지에서는
+ 선언문(Declaration) :<%! %> 전역변수 매소드
+ 스크립트릿(Scriptlet)<%  %> 지역변수선언 자바코드
+ 표현식(Expression)  <%= %> 화면에 출력
+
+
+ 인덱스 만들어서 모아줭
+ /////////////////////////////////////////////////////////////
+     <!-- 폼 전송시 요청한 데이터 이름, 나이를 받는다.  request.getParameter();
+        form의 name="" 속성을 가지고 온다!!!-->
+        폼 전송!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+대학교 과목등록 프로젝트
+
+학번 text 필수 자동포커스
+이름 text 필수 자동포커스
+학년  1 2 3 4 radio  필수 자동포커스
+선택과목 select 5과목 중 1개를 선택  select   필수 자동포커스]
+전송버튼 input submit
+
+폼 전송 파일:
+폼 응답 파일:

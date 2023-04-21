@@ -1,0 +1,6 @@
+http://localhost:8080/JSP/0413_JSP_프로그래밍/J01_form_data_ajax_request.jsp
+http://localhost:8080/JSP/마켓컬리JSP_AJAX/ajax_request.jsp
+
+
+J01_form_data_ajax_request.jsp
+J02_form_data_ajax_response.jsp

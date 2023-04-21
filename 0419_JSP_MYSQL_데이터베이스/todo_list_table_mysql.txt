@@ -1,0 +1,113 @@
+데이터 베이스 목록 보기  
+SHOW DATABASES;
+
+특정(user)데이터베이스 만들기 
+CREATE DATABASE user;
+
+특정(hyobin)데이터베이스 만들기 
+CREATE DATABASE hyobin;
+
+user 데이터베이스 사용 
+USE user;
+
+hyobin 데이터베이스 사용 
+USE hyobin;
+
+USE mysql;
+
+user  데이터 베이스 안에 있는 모든 테이블을 보여라
+SHOW TABLES;
+
+테이블의 구조를 보여라
+DESC user;
+
+테이블안의 모든 목록중에서 사용자 아이디(user)를 보여라
+SELECT user FROM user;
+///////////////////////////////////////////////////////////////
+
+TODO LIST TABLE 만들기
+
+테이블 이름  : todo_list
+
+필드명       타입  길이 주 키(PRIMARY KEY)  자동증가번호        코멘트
+idx         int            PRIMARY KEY     AUTO_INCREMENT  자동증가번호
+
+todo_list    VARCHAR(250) NOT NULL(빈값 허용 안함)             오늘의 할일
+create_date   timestamp   
+
+
+
+테이블 만들기
+CREATE TABLE todo_list(
+    idx         int     NOT NULL    PRIMARY KEY     AUTO_INCREMENT,
+    todo_list   VARCHAR(250)    NOT NULL,
+    create_date timestamp DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+테이블에 데이터 삽입하기 -> INSERT INTO 테이블명(필드1, 필드2 ...) VALUES(값1,값2....);  필드랑  값은 짝이 맞아야함 
+
+
+INSERT INTO todo_list() VALUES();
+
+INSERT INTO todo_list(필드1, 필드2 ...) VALUES(값1,값2....);
+
+INSERT INTO todo_list(todo_list,create_date) 
+VALUES
+("영화보기",now()),
+("음악듣기",now()),
+("영어공부",now()),
+("여행가기",now()),
+("산책하기",now());
+
+
+
+
+테이블 데이터 조회하기
+SELECT * FROM todo_list;
+
+////////////////////////////////////////////
+
+주소록 TABLE 만들기
+
+테이블 이름  : address
+
+필드명       타입  길이 주 키(PRIMARY KEY)  자동증가번호        코멘트
+idx         int            PRIMARY KEY     AUTO_INCREMENT  자동증가번호
+
+name   VARCHAR(50) NOT NULL(빈값 허용 안함)                 오늘의 할일
+ph   VARCHAR(13) NOT NULL(빈값 허용 안함)                 오늘의 할일
+addr  VARCHAR(250) NOT NULL(빈값 허용 안함)                 오늘의 할일
+create_date   timestamp   
+
+
+
+
+CREATE TABLE address(
+    idx         int     NOT NULL    PRIMARY KEY     AUTO_INCREMENT,
+    name    VARCHAR(50)     NOT NULL,
+    ph      VARCHAR(13)     NOT NULL,
+    addr    VARCHAR(250)    NOT NULL,
+    create_date timestamp DEFAULT CURRENT_TIMESTAMP
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+ INSERT INTO address(name,ph,addr,create_date) 
+ VALUES
+ ("서효빈","01032461234","서울",now()),
+ ("최미연","01022525555","부산",now()),
+ ("김슬기","01033335785","광주",now()),
+ ("박다미","01023573189","강릉",now()),
+ ("최혜선","01069875235","제주",now());
+
+
+
+
+
+
+
+
+
+
+
+
+
+

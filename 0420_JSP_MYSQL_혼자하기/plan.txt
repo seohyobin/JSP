@@ -1,0 +1,13 @@
+create table todo(
+  idx         int     NOT NULL    PRIMARY KEY     AUTO_INCREMENT,
+  name VARCHAR(15)  NOT NULL,
+  todo VARCHAR(250) NOT NULL,
+  create_date timestamp DEFAULT CURRENT_TIMESTAMP
+)ENGINE =InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO todo(name,todo,create_date) VALUES
+("영화보기","서효빈",now()),
+("음악듣기","최혜선",now());
+);
+
+

@@ -1,0 +1,9 @@
+#wrap{width: 100%; max-width: 1200px; margin: 100px auto ;}
+#wrap h1{text-align: center; padding: 0 0 20px 0;}
+#wrap table{width: 100%; border-collapse: collapse;}
+#wrap table th{ height: 60px; background-color: #eee;}
+#wrap table td{text-align: center; height: 60px;border-bottom: 1px solid #ddd ;}
+
+#wrap .top{ width: 100%; max-width: 1200px; margin: 0 auto;  text-align: right; padding: 20px 0 0 0 ;}
+#wrap .top a{font-size: 20px; font-weight: 600; color: rgb(152, 152, 152); text-decoration: none;}
+#wrap .top a:hover{color: #000;}

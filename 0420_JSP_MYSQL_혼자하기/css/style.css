@@ -1,0 +1,14 @@
+
+*{margin: 0; padding: 0; vertical-align: middle; box-sizing: border-box;}
+#wrap{width: 100%; max-width: 1000px; margin:  100px auto; background-color: rgb(240, 248, 255); padding: 130px;}
+#wrap form{width: 100%;}
+#wrap form table{ width: 100%; border-collapse:collapse ;}
+#wrap form table th{height: 70px; font-size: 40px; padding-bottom:20px ;}
+#wrap form table td{height: 60px;}
+#wrap form table td input{width: 100%; height: 60px; border: 0;  font-size: 17px; padding: 0 15px 0 10px ;}
+#wrap form table td input:nth-child(2){margin-top: 10px ;}
+#wrap form button{width: 100%; text-align: center; height: 50px; background-color: rgba(100, 167, 226,0.3); color: #fff; margin-top:20px ; border: 0; font-size: 20px; cursor: pointer; transition: all 0.3s;} 
+#wrap form button:hover{background-color: rgb(100, 167, 226); color: #fff;} 
+#wrap .top { width: 100%; max-width: 1000px; margin: 0 auto;  text-align: right;}
+#wrap .top a{font-size: 20px; font-weight: 600; color: #38a; text-decoration: none;}
+#wrap .top a:hover{color: #000;}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap{width: 100%;}
+        #wrap .container{width: 100%; max-width: 500px; margin:  0 auto; padding: 130px 0 0 0;}
+        #wrap .container .title{ width: 100%; padding: 0 0 15px 0;}
+        #wrap .container .content{width: 100%;}
+        table{border-collapse:collapse ;}
+        th{margin-bottom:20px;border: 1px solid #333; height: 40px;}
+        td{width: 250px;  border: 1px solid #333; text-align: center; }
+        th,td{ padding: 0 20px 0 0;}
+        input{width: 100%;  height: 40px;  border: 0 ;  text-align: center; outline: 0;}
+        .btn{width: 500px; border: 1px solid #999 ;}
+   
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="container">
+            <div class="title">
+                <h1>숫자입력</h1>
+            </div>
+            <div class="content">
+                <form name="table" id="table" method="post" action="./res.jsp">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>행</th>
+                                <th>열</th>
+                            </tr>
+                        </thead>
+                         <tbody>
+                            <tr>
+                               
+                                <td><input type="text" id="row" name="row" placeholder="행을 입력하세용"></td>
+                                <td><input type="text" id="col" name="col" placeholder="열을 입력하세용"></td>
+                            </tr>
+                         </tbody>
+                    </table>
+                    <input class="btn" type="submit" name="" id="" value="입력완료">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

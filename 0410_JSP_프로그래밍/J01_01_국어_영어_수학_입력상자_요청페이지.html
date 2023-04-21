@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성적입력폼</title>
+    <style>
+       *{margin: 0; padding: 0; vertical-align: middle; box-sizing: border-box;}
+        #wrap{width: 100%; max-width: 600px; margin: 0 auto; padding: 130px 0 0 0;}
+        #wrap .title{width: 100%; text-align: center; padding: 0 0 20px 0 ;}
+        #wrap form{ width: 100%;}
+        #wrap form label{ width: 100%; display: block; }
+        #wrap form label input{ width: 100%; height: 50px;margin: 5px 0; padding: 0 0 0 15px; font-size: 16px;}
+        #wrap form label input:focus{ outline: 0;}
+        #wrap form label .btn{ width:100%; height: 50px; cursor: pointer; margin: 5px 0; background-color: black; font-size: 20px; color: #fff; border-radius: 3px; text-align: center;}
+
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <!--  
+        요청 페이지 J01_국어_영어_수학_입력상자.html
+        응답 페이지 J01_국어_영어_수학_응답페이지.jsp
+    
+        1.
+        form전송방식 get방식
+        입력상자 3개 국어 영어 수학
+        전송버튼 1개/전송방식 get  
+        2. 
+        전송버튼 누르면 응답하는 jsp 제작 구현 하시오
+        3과목 점수 출력
+        총점 ,평균 출력
+        -->
+        <div class="title">
+            <h1>성적입력</h1>
+        </div>
+        <form  autocomplete="off" name="student_grade" id="studentGrade" method="get" action="../0410_JSP_프로그래밍/J01_02_국어_영어_수학_응답페이지.jsp">
+            <label for="koreanSc">
+                <input type="text" id="koreanSc" name="korean_sc" placeholder="국어 점수를 입력하세요" required autofocus>
+            </label>
+            <label for="mathSc">
+                <input type="text" id="mathSc" name="math_sc" placeholder="수학 점수를 입력하세요" required>
+            </label>
+            <label for="englishSc">
+                <input type="text" id="englishSc" name="english_sc" placeholder="영어 점수를 입력하세요" required>
+            </label>
+            <label for="">
+                <input class="btn" type="submit" value=" 입력완료" >
+                
+            </label>
+        </form>
+    </div>
+</body>
+</html>
